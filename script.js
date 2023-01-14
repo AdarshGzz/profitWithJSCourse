@@ -196,7 +196,14 @@ class user{
 
 let jhon = new user("jhon","davis",["soccer","volleyball"]);
 
-let adarsh = new user("Adarsh","Gupta",["guitar","coding"]);
 console.log(jhon);
 console.log(jhon.getFullName());
-console.log(adarsh.getFullName());
+
+class AdminUser extends user{
+    setPassward = () =>{
+        this.passward = passward;
+    }
+}
+
+let adarsh = new AdminUser("Adarsh","Gupta" , ["guitar"]);
+console.log(adarsh);

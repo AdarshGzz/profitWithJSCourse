@@ -181,29 +181,83 @@
 
 ////////////////////////////////
 
-///// classes is javascript
+// ///// classes is javascript
 
-class user{
-    constructor(firstName, lastName,userHobbies){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userHobbies = userHobbies;
-    }
-    getFullName = () =>{
-        return `${this.firstName} ${this.lastName}`;
-    }
-}
+// class user{
+//     constructor(firstName, lastName,userHobbies){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.userHobbies = userHobbies;
+//     }
+//     getFullName = () =>{
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
 
-let jhon = new user("jhon","davis",["soccer","volleyball"]);
+// let jhon = new user("jhon","davis",["soccer","volleyball"]);
 
-console.log(jhon);
-console.log(jhon.getFullName());
+// console.log(jhon);
+// console.log(jhon.getFullName());
 
-class AdminUser extends user{
-    setPassward = () =>{
-        this.passward = passward;
-    }
-}
+// class AdminUser extends user{
+//     setPassward = () =>{
+//         this.passward = passward;
+//     }
+// }
 
-let adarsh = new AdminUser("Adarsh","Gupta" , ["guitar"]);
-console.log(adarsh);
+// let adarsh = new AdminUser("Adarsh","Gupta" , ["guitar"]);
+// console.log(adarsh);
+
+////////////////////////////////
+
+/////////// synchronous and Asynchronous function (chatGpt)
+
+// //// This is an asynchronous function
+// function delayedLog(text) {
+//   setTimeout(() => {
+//     console.log(text);
+//   }, 2000);
+// }
+
+// console.log("Start");
+// delayedLog("This will be logged after 2 seconds");
+// console.log("End");
+
+// //// Asynchronous function example using Promises:
+// //// This is an asynchronous function
+// function getData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let data = {id: 1, name: "John"};
+//       resolve(data);
+//     }, 2000);
+//   });
+// }
+
+// console.log("Start");
+// getData().then((data) => {
+//   console.log("Data received: " + data);
+// });
+// console.log("End");
+
+
+//// Asynchronous function example using async/await:
+// //// This is an asynchronous function
+// async function getData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let data = {id: 1, name: "John"};
+//       resolve(data);
+//     }, 2000);
+//   });
+// }
+
+// console.log("Start");
+// (async () => {
+//     let data = await getData();
+//     console.log("Data received: " + data);
+// })();
+// console.log("End");
+
+
+ 

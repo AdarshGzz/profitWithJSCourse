@@ -6,9 +6,101 @@ body {
 .post-link {
     text-decoration: none;
 }
+header{
+    min-height: 350px;
+    position: relative;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-image: url(../assets/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+header>*{
+    z-index: 1;
+}
+header::after{
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.7);
+}
+.profile-image{
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    border-radius:50%;
+    background-image: url(../assets/profile.png);
+    background-size: cover;
+}
+.profile-name{
+    font-size:3rem;
+    font-weight:bold;
+}
+.subtext{
+    margin-top:8px;
+}
+.main{
+    /* background-color: yellow; */
+    /* height: ; */
+    margin-top:32px;
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    max-width: 750px;
+    min-width: 600px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right:16px;
+}
 
-
-
+.post{
+    /* width: 100%; */
+    display: flex;
+    border: 1px solid #eaecee;
+    border-radius: 8px;
+    min-height: 200px;
+    /* position: absolute; */
+}
+.post-image{
+    flex-basis: 40%;
+    background-image: url(../assets/blog1img.jpg);
+    background-size: cover;
+    background-position: center ;
+    overflow: hidden;
+}
+.post-content{
+    flex-basis:60%;
+    padding: 24px;
+}
+.post-date{
+    font-size: 12px;
+    color: #5a775e;
+}
+.post-title{
+    margin-top: 16px;
+    font-size:1.5rem;
+    font-weight:600;
+    color: #333;
+}
+.post-title>h4{
+    margin:0;
+}
+.post-text{
+    margin-top:4px;
+    color: #495057;
+    font-weight: 400;
+    line-height: 1.4;
+    max-height:40px;
+    overflow: hidden;
+}
 footer {
     min-height: 100px;
     background-color: #eaecee70;
@@ -16,6 +108,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 14px;
 }

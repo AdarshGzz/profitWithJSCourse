@@ -65,16 +65,23 @@ header::after{
     /* width: 100%; */
     display: flex;
     border: 1px solid #eaecee;
-    border-radius: 8px;
+    border-radius: 10px;
     min-height: 200px;
+    cursor: pointer;
     /* position: absolute; */
+    transition: all 0.25s ease;
+    overflow: hidden;
+}
+.post:hover{
+    transform: translate3d(0px, -5px, 0px);
+    box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.1)
+
 }
 .post-image{
     flex-basis: 40%;
     background-image: url(../assets/blog1img.jpg);
     background-size: cover;
     background-position: center ;
-    overflow: hidden;
 }
 .post-content{
     flex-basis:60%;
@@ -98,8 +105,35 @@ header::after{
     color: #495057;
     font-weight: 400;
     line-height: 1.4;
-    max-height:40px;
+    max-height:65px;
     overflow: hidden;
+}
+.add-post{
+    position: fixed;
+    cursor: pointer;
+    /* margin-left: 80%; */
+    content :"";
+    height: 3rem;
+    width: 3rem;
+    bottom:30px;
+    right: 30px;
+    background-color: #004180;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .9s ease-in-out;
+}
+.add-post:hover{
+    background-color: #002346;
+    transform: rotate(360deg);
+}
+.add-post a{
+    text-decoration:none;
+    color: #fff;
+    font-weight:600;
+    font-size: 24px;
 }
 footer {
     min-height: 100px;
@@ -108,6 +142,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 14px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color :#004186;
+    border: 1px solid #004186;
+    border-radius: 5px;
+    padding:5px 8px;
 }
